@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab05 - Nội dung số</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f7ff;
+      color: #17304d;
+    }
+
+    header {
+      background: #0955a3;
+      padding: 30px 15px;
+      text-align: center;
+      color: white;
+    }
+
+    nav {
+      background: #07396d;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+
+    .description {
+      text-align: center;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 4px 15px #00000012;
+    }
+
+    h2 { color: #0955a3; }
+
+    .infographic {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .note {
+      margin-top: 30px;
+      padding: 20px;
+      background: #e3efff;
+      border-radius: 10px;
+      line-height: 1.8;
+    }
+
+    footer {
+      margin-top: 40px;
+      background: #07396d;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    @media (max-width: 700px) {
+      .content { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>LỢI ÍCH CỦA CÔNG NGHỆ SỐ</h1>
+    <p>Ứng dụng công nghệ số trong học tập</p>
+  </header>
+
+  <nav>
+    <a href="#infographic">Infographic</a>
+    <a href="#video">Video</a>
+    <a href="#banquyen">Bản quyền</a>
+  </nav>
+
+  <main>
+    <div class="description">
+      <h2>Giới thiệu</h2>
+      <p>
+        Công nghệ số mang đến nhiều cơ hội học tập mới,
+        giúp người học tiếp cận kiến thức nhanh chóng,
+        học tập linh hoạt và phát triển kỹ năng số.
+      </p>
+    </div>
+
+    <section class="content">
+      <article class="card" id="infographic">
+        <h2>1. Infographic</h2>
+        <p>
+          Sáu lợi ích nổi bật của công nghệ số
+          đối với hoạt động học tập.
+        </p>
+        <img
+          class="infographic"
+          src="Lab05_Ex2.1.png"
+          alt="Lợi ích của công nghệ số trong học tập"
+        >
+      </article>
+
+      <article class="card" id="video">
+        <h2>2. Video giới thiệu</h2>
+        <p>
+          Video khoảng 30 giây giới thiệu
+          các lợi ích của công nghệ số.
+        </p>
+
+       
+        <iframe
+          src="https://www.youtube.com/embed/NbvH3CsRXl0?si=x74rgMe-vxsGYB2z"
+          title="Video lợi ích công nghệ số"
+          allow="accelerometer; autoplay; clipboard-write;
+                 encrypted-media; gyroscope;
+                 picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </article>
+    </section>
+
+    <section class="note" id="banquyen">
+      <h2>Ghi chú bản quyền và nguồn AI</h2>
+      <p>
+        Nội dung và mã HTML được hỗ trợ tạo bởi AI và ChatGPT
+      </p>
+      <p>
+        Infographic và video: Capcut, ảnh miễn phí từ Pexels, âm thanh từ FreeSound (CC0). 
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>CT005 - Bài thực hành 05</p>
+    <p>Tạo, quản lý và chia sẻ nội dung số</p>
+  </footer>
+
+</body>
+</html>
